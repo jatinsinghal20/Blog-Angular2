@@ -1,0 +1,16 @@
+.blog{
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+.blog-content{
+  position: absolute;
+  height: 8rem;
+  overflow: hidden;
+}
+
+.footer{
+  position: absolute;
+  bottom: 1em;
+}

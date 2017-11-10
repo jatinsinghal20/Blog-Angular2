@@ -1,0 +1,13 @@
+.welcome{
+  background-color: black;
+  color: white;
+  margin: auto;
+  height: 50vh;
+  position: relative;
+}
+
+.auto{
+  position: absolute;
+  margin: auto;
+  text-align: center;
+}
