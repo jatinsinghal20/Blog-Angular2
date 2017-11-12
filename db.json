@@ -25,5 +25,11 @@
       "author": "John Doe",
       "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
     }
+  ],
+  "users" :[
+    {
+      "id" : "jatin",
+      "password" : "123"
+    }
   ]
 }

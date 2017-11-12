@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BlogService} from "../blog.service";
 
 @Component({
   selector: 'app-main',
@@ -7,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-
-  constructor() { }
+  blogs : Object[];
+  showAllBlogs : boolean;
+  constructor(private blogService :BlogService) {
+    this.showAllBlogs = true;
+  }
 
   ngOnInit() {
+    this.blogService.getBlogs()
+      .subscribe(res=>{
+        this.blogs = res;
+      })
   }
+
 
 }

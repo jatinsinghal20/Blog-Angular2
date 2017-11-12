@@ -1,3 +1,29 @@
-<p>
-  login works!
-</p>
+<!--
+<div class="d-inline-block">
+  <div class="d-inline-block">
+    <div class="form-group d-inline-block">
+      <input type="email" class="form-control"placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+  </div>
+  <div class="d-inline-block">
+    <div>
+      <button class="btn btn-light">LogIn</button>
+    </div>
+    <div >
+      <button class="btn btn-light">SignUp</button>
+    </div>
+  </div>
+</div>
+
+-->
+
+<form  class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="text" placeholder="UserName" [(ngModel)]="id" name="users">
+  <input class="form-control mr-sm-2" type="Password" placeholder="Password" [(ngModel)]="pass" name="pass">
+  <button class="btn btn-outline-success my-2 my-sm-0" (click)="logIn()">Login</button>
+  <button class="btn btn-outline-success my-2 my-sm-0" (click)="signUp()">Signup</button>
+</form>
+{{user|json}}
