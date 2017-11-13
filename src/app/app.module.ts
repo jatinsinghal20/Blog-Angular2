@@ -15,25 +15,24 @@ import {UsersService} from "./users.service";
 import {AuthService} from "./auth.service";
 import {AuthGuardService} from "./auth-guard.service";
 import { NavItemsComponent } from './nav-items/nav-items.component';
+import { InputBlogComponent } from './input-blog/input-blog.component';
 
 const appRoutes: Routes = [
-  { path: 'welcome', component: WelcomeComponent,
-    children :[
-      {
-        path:'' , component: LoginComponent
-      }
-    ]
-  },
+  { path: 'welcome', component: MainComponent,},
   {
     path:'home',
-    component: NavbarComponent,
-    canActivate:[AuthGuardService],
-    children :[
-      {
-        path:'' , component: NavItemsComponent,
-        canActivateChild:[AuthGuardService]
-      }
-    ]
+    component: MainComponent,
+    canActivate:[AuthGuardService]
+  },
+  {
+    path:'favourites',
+    component: MainComponent,
+    canActivate:[AuthGuardService]
+  },
+  {
+    path:'my-blogs',
+    component: MainComponent,
+    canActivate:[AuthGuardService]
   },
   { path: '',
     redirectTo: '/welcome',
@@ -51,7 +50,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     MainComponent,
     AllBlogsComponent,
-    NavItemsComponent
+    NavItemsComponent,
+    InputBlogComponent
   ],
   imports: [
     BrowserModule,

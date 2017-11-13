@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -7,7 +7,16 @@ import {Router} from "@angular/router";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent{
-  /*toggle:boolean =true;
+  /*view:string = "home"
+  constructor(private route:Router){
+    switch (route.url){
+      case "/favourites" : this.view="favourites";
+      case "/myBlogs" : this.view = "myblogs";
+      default: this.view="home"
+    }
+  }*/
+  @Output() notify:EventEmitter<string> = new EventEmitter();
+  toggle:boolean =true;
   constructor(private router:Router) { }
 
   ngOnInit() {
@@ -16,8 +25,8 @@ export class NavbarComponent{
   toggleNav(login) {
     if(login===1){
       this.toggle = false;
+      this.notify.emit("Log In");
       this.router.navigate(["/home"]);
     }
-    console.log(login)
-  }*/
+  }
 }

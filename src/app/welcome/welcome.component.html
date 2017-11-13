@@ -1,4 +1,4 @@
-<div class="welcome">
+<div class="welcome" *ngIf="hideWelcome">
   <div>
     <div class="auto">
       <h2>WELCOME TO</h2>
@@ -6,4 +6,5 @@
     </div>
   </div>
 </div>
-<app-navbar></app-navbar>
+
+<app-navbar (notify)="toggle()"></app-navbar>

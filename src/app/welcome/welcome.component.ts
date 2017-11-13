@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  hideWelcome:boolean = true;
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggle(){
+    this.hideWelcome = !this.hideWelcome;
+  }
 }

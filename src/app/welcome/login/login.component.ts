@@ -25,9 +25,9 @@ export class LoginComponent implements OnInit {
       .subscribe(res =>{
           this.user=res;
           if(this.user.password===this.pass){
-            this.authService.login()
+            this.authService.login(this.id)
               .subscribe(res=>{
-                this.router.navigate(['/home'])
+                this.notify.emit(1);
               })
           }
           else {
