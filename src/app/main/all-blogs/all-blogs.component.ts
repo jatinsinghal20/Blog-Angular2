@@ -5,17 +5,10 @@ import {Component, Input, OnChanges, OnInit} from '@angular/core';
   templateUrl: './all-blogs.component.html',
   styleUrls: ['./all-blogs.component.css']
 })
-export class AllBlogsComponent implements OnInit,OnChanges {
-  @Input() blogs:Object[];
-  @Input() id:String[];
+export class AllBlogsComponent{
+  @Input() blog:Object;
   constructor() { }
 
   ngOnInit() {
   }
-
-  ngOnChanges(){
-    if(this.id.length>0)
-      this.blogs = this.blogs.filter(blog=> this.id.indexOf(blog['id'])!==-1)
-  }
-
 }

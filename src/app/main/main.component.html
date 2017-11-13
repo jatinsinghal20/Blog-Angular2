@@ -1,12 +1,20 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6 col-lg-4" *ngFor="let blog of blogs">
+    <div class="col-md-6 col-lg-4" *ngFor="let blog of showBlogs">
       <div class="card blog">
         <div class="card-body">
-          <app-all-blogs [blogs]="blogs" [id]="showBlogs"></app-all-blogs>
-          <footer class="footer">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+          <app-all-blogs [blog]="blog"></app-all-blogs>
+          <footer class="footer" *ngIf="home">
+            <small class="card-link">{{blog.date|date}}</small>
+            <button (click)="favourite(blog)" class="btn btn-link">Mark As Fav</button>
+          </footer>
+          <footer class="footer" *ngIf="favourites">
+            <small class="card-link">{{blog.date|date}}</small>
+            <button (click)="favourite(blog)" class="btn btn-link">Remove From Favourite</button>
+          </footer>
+          <footer class="footer" *ngIf="myBlogs">
+            <a href="#" class="card-link">Edit</a>
+            <a href="#" class="card-link">Delete</a>
           </footer>
         </div>
       </div>

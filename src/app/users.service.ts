@@ -19,7 +19,12 @@ export class UsersService {
   }
 
   addUser(data){
-    return this.http.post(UserUrl,data,header);
+    return this.http.post(UserUrl,data,header)
+      .map(res=>res.json());
   }
 
+  update(user) {
+    return this.http.patch(UserUrl+user.id,user,header)
+      .map(res=>res.json());
+  }
 }
