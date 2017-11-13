@@ -1,43 +1,78 @@
 {
-  "blog":[
+  "blog": [
     {
       "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
       "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
-      ,"id" :"0"
-    },{
+      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
+      "id": "0"
+    },
+    {
       "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
       "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
-      ,"id" :"1"
-    },{
+      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
+      "id": "1"
+    },
+    {
       "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
       "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
-      ,"id" :"2"
-    },{
+      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
+      "id": "2"
+    },
+    {
       "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
       "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
-      ,"id" :"3"
-    },{
+      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
+      "id": "3"
+    },
+    {
       "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
       "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
-      ,"id" :"4"
-    },{
+      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
+      "id": "4"
+    },
+    {
       "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
       "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'"
-      ,"id" :"5"
+      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
+      "id": "5"
+    },
+    {
+      "author": "jatin",
+      "date": "Mon Nov 13 2017 14:50:06 GMT+0530 (India Standard Time)",
+      "id": "NCncFqx"
+    },
+    {
+      "author": "jatin",
+      "title": "jatin",
+      "date": "Mon Nov 13 2017 14:52:56 GMT+0530 (India Standard Time)",
+      "logo": "dsnj",
+      "category": "Technology",
+      "content": "hbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxssssssssssshbhbhhbxsssssssssss",
+      "id": "ujXEdsy"
+    },
+    {
+      "author": "jatin",
+      "title": "jaj",
+      "date": "Mon Nov 13 2017 14:55:07 GMT+0530 (India Standard Time)",
+      "logo": "sjajn",
+      "category": "Technology",
+      "content": "sbjjsjbsbjsjsbjsxbbxsjsxjxsjjsbjsxbjsxjbxsbs",
+      "id": "uz74H7C"
     }
   ],
-  "users" :[
+  "users": [
     {
-      "id" : "jatin",
-      "password" : "123",
-      "favourite" :["0","1","2"],
-      "my_blog" : ["3","5"]
+      "id": "jatin",
+      "password": "123",
+      "favourite": [
+        "0",
+        "1",
+        "2"
+      ],
+      "my_blog": [
+        "3",
+        "5"
+      ]
     }
   ]
 }

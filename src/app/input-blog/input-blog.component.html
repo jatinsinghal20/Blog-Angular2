@@ -1,3 +1,45 @@
-<p>
-  input-blog works!
-</p>
+<div class="container">
+  <br>
+  <form #createform="ngForm" (ngSubmit)="submitForm(createform.value); createform.reset()">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" name="blogTitle"  minlength="3" maxlength="60"  required #blogTitle="ngModel" [(ngModel)]="blog.title" class="form-control"  placeholder="Blog Title">
+      <div *ngIf="blogTitle.errors && (blogTitle.dirty|| blogTitle.touched)" class="alert alert-danger">
+        <div [hidden]="!blogTitle.errors.required">
+          Please enter a name
+        </div>
+        <div [hidden]="!blogTitle.errors.minlength">
+          Please enter alteast 3 characters
+        </div>
+        <div [hidden]="!blogTitle.errors.maxlength">
+          Please enter less than 160 characters
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Image URL</label>
+      <!--pattern="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})"-->
+      <input type="url" class="form-control" maxlength="1000"   name="image" #image="ngModel" [(ngModel)]="blog.logo"  placeholder="Image URL">
+      <div *ngIf="image.errors && (image.dirty|| image.touched)" class="alert alert-danger">
+        <div [hidden]="!image.errors.pattern">
+          Please enter a valid url
+        </div>
+        <div [hidden]="!image.errors.maxlength">
+          Please enter less than 1000 characters
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Select Category</label>
+      <select [(ngModel)]="selectedCategory.id" class="form-control" name="dropdown" #dropdown="ngModel" (input)="onInput($event)">
+        <option *ngFor="let category of categories" value= {{category.id}}>{{category.name}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Content</label>
+      <textarea class="form-control" required [(ngModel)]="blog.content" name="content" #content="ngModel" rows="9"></textarea>
+    </div>
+    <button [disabled]="!createform.form.valid" type="submit" class="btn btn-flat" >Submit</button>
+  </form>
+  <br>
+</div>

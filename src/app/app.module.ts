@@ -34,6 +34,11 @@ const appRoutes: Routes = [
     component: MainComponent,
     canActivate:[AuthGuardService]
   },
+  {
+    path:'create',
+    component: InputBlogComponent,
+    canActivate:[AuthGuardService]
+  },
   { path: '',
     redirectTo: '/welcome',
     pathMatch: 'full'
@@ -55,8 +60,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpModule,
     FormsModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [BlogService,
