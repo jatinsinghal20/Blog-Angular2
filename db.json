@@ -31,12 +31,6 @@
       "id": "4"
     },
     {
-      "title": "An Open Letter to (Male) ChefsAn Open Letter to (Male) Chefs",
-      "author": "John Doe",
-      "content": "Some quick ber of the Conservative Party, serving first as navy minister and then as agriculture minister; the first professional firefighter corps in Brazil was formed during his tenure. In late 1866'",
-      "id": "5"
-    },
-    {
       "author": "jatin",
       "date": "Mon Nov 13 2017 14:50:06 GMT+0530 (India Standard Time)",
       "id": "NCncFqx"
@@ -58,21 +52,77 @@
       "category": "Technology",
       "content": "sbjjsjbsbjsjsbjsxbbxsjsxjxsjjsbjsxbjsxjbxsbs",
       "id": "uz74H7C"
+    },
+    {
+      "author": "jatin",
+      "title": "Why software engineers don’t get jobs: Three (+1) horror dnd",
+      "date": "Tue Nov 14 2017 09:30:25 GMT+0530 (India Standard Time)",
+      "category": "Creativity",
+      "content": "After programming for three years I started coderfit.com — we match software engineer with SMEs and venture-backend startups. If you want to pair-program with an expert in your stack and skip boring phone screens, send me an email to iwan@coderfit.com.\nWhen people don’t get offers, they mostly think it is their fault: “I have been rejected by three firms in a row, hence I am probably a shitty engineer”. After working for some time in tech recruiting, I can assure you that random factors and noise (false negatives) play an important role, too. Often rejections are due to random things happening and irrational reasons (true negatives).\nHorror-Story 1: Candidate rejected because of framework\nFor a frontend role in an agency I pitched a frontend engineer who contributes to ECMAScript and wrote heavy open source contributions. It took me weeks to find this person and hours to properly assess him, including video interviews (that is what we love to do at coderfit.com). He was rejected by an engineer at the agency who looked for ten minutes at the submitted code. The candidate was not even rejected properly but the firm mailed him a canned answer:\n“ […] Although your resume and cover letter were very competitive, our hiring team reviewed your application and did not select it for further consideration.” […]\nThis was a truly bad answer because there was no cover-letter ever submitted. After reading this, I dropped everything, drove to their office to talk to the engineer who rejected the best frontend candidate I interviewed in 2017.\nFirst, the interviewing engineer could not really tell me why he rejected the candidate, he just said “the code is over-engineered” although it was actually properly structured, with all ES6 operators and short functions in-place. After discussing this for 10 minutes, the reason for rejection became a more clear: The candidate used a MVC framework that was unknown to the interviewer. I was so impressed by the candidate’s use of the framework in the coding interview with me that I could not understand how this could be a problem.\nSome background info why we used an unknown MVC framework: The hiring firm was an agency looking for repeatable processes and the lead engineer (not the interviewer) complained to me that they tend to “re-invent the wheel for each client”. The candidate whom I submitted build a custom framework in his free time that was solving some of these issues the agency was facing.\nSince the rejecting interviewer did not look at my notes or my video interview recording, he was lacking the context why the candidate used the framework and just hit “reject” in the",
+      "id": "6~b~vav"
+    },
+    {
+      "author": "jatin",
+      "title": "Why software engineers don’t get jobs: Three (+1) horror sto",
+      "date": "Tue Nov 14 2017 09:31:44 GMT+0530 (India Standard Time)",
+      "category": "Technology",
+      "content": "After programming for three years I started coderfit.com — we match software engineer with SMEs and venture-backend startups. If you want to pair-program with an expert in your stack and skip boring phone screens, send me an email to iwan@coderfit.com.\nWhen people don’t get offers, they mostly think it is their fault: “I have been rejected by three firms in a row, hence I am probably a shitty engineer”. After working for some time in tech recruiting, I can assure you that random factors and noise (false negatives) play an important role, too. Often rejections are due to random things happening and irrational reasons (true negatives).\nHorror-Story 1: Candidate rejected because of framework\nFor a frontend role in an agency I pitched a frontend engineer who contributes to ECMAScript and wrote heavy open source contributions. It took me weeks to find this person and hours to properly assess him, including video interviews (that is what we love to do at coderfit.com). He was rejected by an engineer at the agency who looked for ten minutes at the submitted code. The candidate was not even rejected properly but the firm mailed him a canned answer:\n“ […] Although your resume and cover letter were very competitive, our hiring team reviewed your application and did not select it for further consideration.” […]\nThis was a truly bad answer because there was no cover-letter ever submitted. After reading this, I dropped everything, drove to their office to talk to the engineer who rejected the best frontend candidate I interviewed in 2017.\nFirst, the interviewing engineer could not really tell me why he rejected the candidate, he just said “the code is over-engineered” although it was actually properly structured, with all ES6 operators and short functions in-place. After discussing this for 10 minutes, the reason for rejection became a more clear: The candidate used a MVC framework that was unknown to the interviewer. I was so impressed by the candidate’s use of the framework in the coding interview with me that I could not understand how this could be a problem.\nSome background info why we used an unknown MVC framework: The hiring firm was an agency looking for repeatable processes and the lead engineer (not the interviewer) complained to me that they tend to “re-invent the wheel for each client”. The candidate whom I submitted build a custom framework in his free time that was solving some of these issues the agency was facing.\nSince the rejecting interviewer did not look at my notes or my video interview recording, he was lacking the context why the candidate used the framework and just hit “reject” in the",
+      "id": "Wr1c2Fw"
+    },
+    {
+      "author": "jatin",
+      "title": "Surround Yourself with People Who Hold You to a Higher Stand",
+      "date": "Tue Nov 14 2017 11:45:05 GMT+0530 (India Standard Time)",
+      "category": "Technology",
+      "content": "There’s some interesting research in social psychology explaining how most people form their peer groups. Especially as children and adolescence, but often as adults, people select their friends based on proximity more than anything else.\nEven in a college classroom, who are you going to make friends with? It’s not those who have similar personalities and interests. It’s the people you literally sit next to.\nSocioeconomically, there is loads of research showing a person’s economic mobility is highly determined by the county they live in. In certain counties, your chances of improving your financial situation are very good. In others, like the county our three foster children came from, your chances of improving your financial situation are slim-to-none.\nPut most simply, what stands in nearest proximity to you has enormous implications. As Jim Rohn has wisely said, “You are the average of the five people you spend the most time with.” Similarly, Tim Sanders, former Yahoo! director, said, “Your network is your net worth.”\nIf you’re feeling stuck and struggling to make the progress you want, take a look around you. Most people adapt to whatever environment they find themselves. They have what psychologists call an “external locus of control,”where they believe factors outside of them dictate the direction of their lives. Consequently, they don’t take responsibility for shaping the environment that will ultimately shape them.\nWho are the people in nearest proximity to you?\nHow did they become your peer group?\nWas it on purpose or based on convenience?\nDo these people hold you to a high standard?\nOr, do they hold you to an even lower standard than you hold yourself?\nThe Fastest Way to Change Your Life\nIf you want to improve and succeed in your life, you need to surround yourself with people who have higher standards than you do. As Tony Robbins has said, your life is a reflection of your standards, or what you’re willing to tolerate. Most people are willing to tolerate unhealthy relationships, poor finances, and jobs they hate. If not so, those things wouldn’t be in their lives.\nThe common approach to personal growth and change is to exert more willpower, or to improve your mindset, or to be more gritty. And all of these things certainly have their place.\nBut if your environment radically contradicts the goals you’re trying to pursue, your life ",
+      "id": "KnizxN8"
+    },
+    {
+      "author": "jatin",
+      "title": "edit you",
+      "date": "Tue Nov 14 2017",
+      "category": "Technology",
+      "content": "fuck gupta",
+      "id": "DZ2R0NC"
+    },
+    {
+      "title": "Hello",
+      "author": "jatin",
+      "logo": "",
+      "category": "",
+      "content": "\n    this.blog.title = \"\";\n    this.blog.author =\n    this.blog.logo = \"\";\n    this.blog.category = \"\";\n    this.blog.content = \"\";\n    this.blog.date = \"\";\n    this.blog.id = \"\";\n    this.blog.title = \"\";\n    this.blog.author =\n    this.blog.logo = \"\";\n    this.blog.category = \"\";\n    this.blog.content = \"\";\n    this.blog.date = \"\";\n    this.blog.id = \"\";",
+      "date": "Tue Nov 14 2017",
+      "id": "EGkyhyx"
+    },
+    {
+      "title": "Edited Again",
+      "author": "jatin",
+      "logo": "",
+      "category": "",
+      "content": "Helloooo there!!!!!!!!!!!!!!!!",
+      "date": "Tue Nov 14 2017",
+      "id": "9fgZz3S"
+    },
+    {
+      "title": "With Category",
+      "author": "jatin",
+      "logo": "",
+      "category": "Technology",
+      "content": "hbskdddddddddddddddddddddddddd",
+      "date": "Tue Nov 14 2017",
+      "id": "14tAlaD"
     }
   ],
   "users": [
     {
       "id": "jatin",
       "password": "123",
-      "favourite": [
-        "0",
-        "1",
-        "2",
-        "ujXEdsy"
-      ],
+      "favourite": [],
       "my_blog": [
-        "3",
-        "5"
+        "DZ2R0NC",
+        "EGkyhyx",
+        "9fgZz3S",
+        "14tAlaD"
       ]
     }
   ]

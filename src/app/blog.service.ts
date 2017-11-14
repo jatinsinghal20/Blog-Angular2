@@ -28,8 +28,18 @@ export class BlogService {
       .map(res=> res.json());
   }
 
-  postData(blogData) {
+  addBlog(blogData) {
     return this.http.post(BlogUrl,blogData,header)
+      .map(res=>res.json());
+  }
+
+  deleteBlog(id) {
+    return this.http.delete(BlogUrl+id)
+      .map(res=>res.json())
+  }
+
+  updateBlog(data) {
+    return this.http.patch(BlogUrl+data.id,data,header)
       .map(res=>res.json());
   }
 }

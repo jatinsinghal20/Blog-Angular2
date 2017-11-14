@@ -3,6 +3,8 @@ import {Subscription} from "rxjs/Subscription";
 import {BlogService} from "../blog.service";
 import {Router} from "@angular/router";
 import {AuthService} from "../auth.service";
+import {UsersService} from "../users.service";
+import {IBlog} from "../IBlog";
 
 class Category {
   constructor(public id: string, public name: string) { }
@@ -25,29 +27,48 @@ export class InputBlogComponent implements OnInit{
     new Category('Politics', 'Politics'),
     new Category('Cars', 'Cars')
   ];
-  blog: Object;/*
-  updateRequeust:boolean=false;
-  subscription:Subscription;*/
+  blog: IBlog ;
+  subscription:Subscription;
 
-  constructor(private webService: BlogService, private router: Router,private authService:AuthService){
-      this.blog={};
+  constructor(private webService: BlogService, private router: Router, private userService : UsersService,private authService:AuthService){
+    this.blog={
+      title:"",
+      author:"",
+      logo:"",
+      category:this.categories[0].id,
+      content:"",
+      date:"",
+      id:""
+    }
   }
 
   ngOnInit() {
-    this.selectedCategory = this.categories[0];
-    /*this.subscription = this.webService.navItem$.subscribe(
+   /* this.blog.title = "";
+    this.blog.author = "";
+    this.blog.logo = "";
+    this.blog.category = "";
+    this.blog.content = "";
+    this.blog.date = "";
+    this.blog.id = "";*/
+    this.subscription = this.webService.navItem$.subscribe(
       item => {
-        this.blog = item;
-        this.updateRequeust = true;
-
+        if(item) {
+          this.blog['title'] = item['title'];
+          this.blog.author = item['author'];
+          this.blog.logo = item['logo'];
+          this.blog.category = item['category'];
+          this.blog.content = item['content'];
+          this.blog.date = item['date'];
+          this.blog.id = item['id'];
+        }
       }
     );
-    console.log(this.blog);*/
+    console.log(this.blog);
   }
-/*
+
   ngOnDestroy() {
     this.subscription.unsubscribe();
-  }*/
+  }
 
   onInput($event) {
     $event.preventDefault();
@@ -55,45 +76,28 @@ export class InputBlogComponent implements OnInit{
   }
 
   submitForm(value){
-    // console.log(this.updateRequeust);
-    let newDate = new Date(Date.now());
-    let blogData={
-      author: this.authService.id,
-      title: value.blogTitle,
-      date:newDate.toString(),
-      logo:value.image,
-      category: value.dropdown,
-      content: value.content
-    };
-/*
-
-    if(this.updateRequeust){
-
-      blogData['id']=this.blog.id;
-      // blogData['votes']=this.blog.votes;
-      console.log(blogData);
-      this.webService.updateData(blogData)
-        .subscribe(res=>{
-            console.log(res);
-          },
-          (err) => {
-            console.error(err)
-          },
-          ()=>{
-            this.router.navigateByUrl('/home');
-          })
+    this.blog['author'] = this.authService.id;
+    this.blog['date'] = new Date(Date.now()).toDateString();
+    if(this.blog['id']){
+      this.webService.updateBlog(this.blog).subscribe(res=>{
+        this.router.navigate(["/my-blogs"]);
+      })
     }
     else {
-*/
-      this.webService.postData(blogData)
+      this.webService.addBlog(this.blog)
         .subscribe(res=>{
-            console.log(res);
+            this.userService.checkUser(this.authService.id)
+              .subscribe(user=>{
+                user['my_blog'].push(res['id']);
+                this.userService.update(user).subscribe(res=>
+                {
+                  this.router.navigateByUrl('/my-blogs');
+                })
+              });
           },
           (err) => {
             console.error(err)
-          },
-          ()=>{
-            this.router.navigateByUrl('/home');
           })
     }
+  }
 }

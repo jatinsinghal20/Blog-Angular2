@@ -39,6 +39,11 @@ const appRoutes: Routes = [
     component: InputBlogComponent,
     canActivate:[AuthGuardService]
   },
+  {
+    path:'edit',
+    component: InputBlogComponent,
+    canActivate:[AuthGuardService]
+  },
   { path: '',
     redirectTo: '/welcome',
     pathMatch: 'full'

@@ -9,3 +9,12 @@
   position: absolute;
   bottom: 1em;
 }
+
+.category{
+  color: blue;
+  font-family: "Monotype Corsiva";
+}
+
+.fav{
+  right:1em;
+}
