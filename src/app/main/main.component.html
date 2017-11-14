@@ -1,6 +1,7 @@
+<app-filters (notify)="filterBlogs($event)"></app-filters>
 <div class="container">
   <div class="row">
-    <div class="col-md-6 col-lg-4" *ngFor="let blog of showBlogs;  let idx = index">
+    <div class="col-md-6 col-lg-4" *ngFor="let blog of finalBlogs;  let idx = index">
       <div class="card blog">
         <div class="card-body">
           <app-all-blogs [blog]="blog"></app-all-blogs>

@@ -17,13 +17,14 @@ export class MainComponent implements OnInit {
   ids:string[];
   showBlogs:IBlog[];
   user:Object;
+  finalBlogs:IBlog[];
 
   home: boolean = false;
   favourites: boolean= false;
   myBlogs: boolean = false;
 
   constructor(private blogService :BlogService,private userService:UsersService, private authService:AuthService,private route:Router) {
-    this.ids=this.blogs=this.showBlogs=[];
+    this.ids=this.blogs=this.showBlogs= this.finalBlogs=[];
     this.home = false;
     this.favourites= false;
     this.myBlogs = false;
@@ -33,6 +34,7 @@ export class MainComponent implements OnInit {
     this.blogService.getBlogs()
       .subscribe(res => {
         this.showBlogs = this.blogs = res;
+        this.finalBlogs=this.showBlogs;
       });
     if(this.authService.id) {
       this.userService.checkUser(this.authService.id)
@@ -71,6 +73,8 @@ export class MainComponent implements OnInit {
         else blog['favourite'] = false;
       })
     }
+
+    this.finalBlogs = this.showBlogs;
   }
   favourite(blog: Object,idx) {
       if(this.user['favourite'].indexOf(blog['id'])===-1){
@@ -84,6 +88,7 @@ export class MainComponent implements OnInit {
         else this.showBlogs.splice(idx,1);
       }
       this.userService.update(this.user).subscribe(res=>{
+        this.finalBlogs = this.showBlogs;
       })
   }
 
@@ -91,12 +96,20 @@ export class MainComponent implements OnInit {
     this.user['my_blog'].splice(this.user['my_blog'].indexOf(blog.id),1);
     this.userService.update(this.user).subscribe();
     this.blogService.deleteBlog(blog.id).subscribe(res=> {
-      console.log(res);
+      this.showBlogs.splice(idx,1);
+      this.finalBlogs = this.showBlogs;
     });
   }
 
   edit(blog){
     this.blogService.changeNav(blog);
     this.route.navigate(["/edit"])
+  }
+
+  filterBlogs(category) {
+    if(category!=="All")
+      this.finalBlogs = this.showBlogs.filter(Blog => Blog.category === category);
+    else
+      this.finalBlogs = this.showBlogs;
   }
 }

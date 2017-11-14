@@ -16,6 +16,7 @@ import {AuthService} from "./auth.service";
 import {AuthGuardService} from "./auth-guard.service";
 import { NavItemsComponent } from './nav-items/nav-items.component';
 import { InputBlogComponent } from './input-blog/input-blog.component';
+import {FiltersComponent} from "./main/filters/filters.component";
 
 const appRoutes: Routes = [
   { path: 'welcome', component: MainComponent,},
@@ -61,7 +62,8 @@ const appRoutes: Routes = [
     MainComponent,
     AllBlogsComponent,
     NavItemsComponent,
-    InputBlogComponent
+    InputBlogComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,

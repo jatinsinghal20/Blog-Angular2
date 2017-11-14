@@ -78,51 +78,48 @@
       "id": "KnizxN8"
     },
     {
-      "author": "jatin",
-      "title": "edit you",
-      "date": "Tue Nov 14 2017",
-      "category": "Technology",
-      "content": "fuck gupta",
-      "id": "DZ2R0NC"
-    },
-    {
-      "title": "Hello",
-      "author": "jatin",
-      "logo": "",
-      "category": "",
-      "content": "\n    this.blog.title = \"\";\n    this.blog.author =\n    this.blog.logo = \"\";\n    this.blog.category = \"\";\n    this.blog.content = \"\";\n    this.blog.date = \"\";\n    this.blog.id = \"\";\n    this.blog.title = \"\";\n    this.blog.author =\n    this.blog.logo = \"\";\n    this.blog.category = \"\";\n    this.blog.content = \"\";\n    this.blog.date = \"\";\n    this.blog.id = \"\";",
-      "date": "Tue Nov 14 2017",
-      "id": "EGkyhyx"
-    },
-    {
-      "title": "Edited Again",
-      "author": "jatin",
-      "logo": "",
-      "category": "",
-      "content": "Helloooo there!!!!!!!!!!!!!!!!",
-      "date": "Tue Nov 14 2017",
-      "id": "9fgZz3S"
-    },
-    {
-      "title": "With Category",
+      "title": "delete",
       "author": "jatin",
       "logo": "",
       "category": "Technology",
-      "content": "hbskdddddddddddddddddddddddddd",
+      "content": "dchbbbbbbbbbbbbbbbbb",
       "date": "Tue Nov 14 2017",
-      "id": "14tAlaD"
+      "id": "4qjsIS_"
+    },
+    {
+      "title": "jnsxjxsj",
+      "author": "jatin",
+      "logo": "",
+      "category": "Cars",
+      "content": "sjxnnnjsxnjsxjn",
+      "date": "Tue Nov 14 2017",
+      "id": "kNXaGIB"
+    },
+    {
+      "title": "nnnjjk",
+      "author": "jatin",
+      "logo": "",
+      "category": "Creativity",
+      "content": "jy",
+      "date": "Tue Nov 14 2017",
+      "id": "jmAQTIw"
     }
   ],
   "users": [
     {
       "id": "jatin",
       "password": "123",
-      "favourite": [],
-      "my_blog": [
-        "DZ2R0NC",
+      "favourite": [
+        "14tAlaD",
         "EGkyhyx",
-        "9fgZz3S",
-        "14tAlaD"
+        "DZ2R0NC",
+        "4qjsIS_",
+        "QrJqCQZ"
+      ],
+      "my_blog": [
+        "4qjsIS_",
+        "kNXaGIB",
+        "jmAQTIw"
       ]
     }
   ]

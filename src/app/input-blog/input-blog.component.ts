@@ -43,13 +43,6 @@ export class InputBlogComponent implements OnInit{
   }
 
   ngOnInit() {
-   /* this.blog.title = "";
-    this.blog.author = "";
-    this.blog.logo = "";
-    this.blog.category = "";
-    this.blog.content = "";
-    this.blog.date = "";
-    this.blog.id = "";*/
     this.subscription = this.webService.navItem$.subscribe(
       item => {
         if(item) {
