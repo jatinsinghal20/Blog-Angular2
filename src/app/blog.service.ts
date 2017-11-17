@@ -40,6 +40,6 @@ export class BlogService {
 
   updateBlog(data) {
     return this.http.patch(BlogUrl+data.id,data,header)
-      .map(res=>res.json());
+      .map(res=>res.json())
   }
 }

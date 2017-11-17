@@ -1,4 +1,5 @@
-import {Component, Input, OnChanges, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
+import {IBlog} from "../../IBlog";
 
 @Component({
   selector: 'app-all-blogs',
@@ -6,9 +7,16 @@ import {Component, Input, OnChanges, OnInit} from '@angular/core';
   styleUrls: ['./all-blogs.component.css']
 })
 export class AllBlogsComponent{
-  @Input() blog:Object;
+
+  @Input() blog:IBlog;
+  @Output() notify : EventEmitter<IBlog> = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
+
+  open(){
+    this.notify.emit(this.blog);
+  }
+
 }

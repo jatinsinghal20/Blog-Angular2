@@ -14,9 +14,10 @@ import {RouterModule, Routes} from "@angular/router";
 import {UsersService} from "./users.service";
 import {AuthService} from "./auth.service";
 import {AuthGuardService} from "./auth-guard.service";
-import { NavItemsComponent } from './nav-items/nav-items.component';
+import { NavItemsComponent } from './welcome/nav-items/nav-items.component';
 import { InputBlogComponent } from './input-blog/input-blog.component';
 import {FiltersComponent} from "./main/filters/filters.component";
+import { FullBlogComponent } from './main/full-blog/full-blog.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: MainComponent,},
@@ -63,7 +64,8 @@ const appRoutes: Routes = [
     AllBlogsComponent,
     NavItemsComponent,
     InputBlogComponent,
-    FiltersComponent
+    FiltersComponent,
+    FullBlogComponent
   ],
   imports: [
     BrowserModule,

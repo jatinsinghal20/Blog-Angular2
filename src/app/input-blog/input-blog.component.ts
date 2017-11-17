@@ -31,6 +31,9 @@ export class InputBlogComponent implements OnInit{
   subscription:Subscription;
 
   constructor(private webService: BlogService, private router: Router, private userService : UsersService,private authService:AuthService){
+  }
+
+  ngOnInit() {
     this.blog={
       title:"",
       author:"",
@@ -39,13 +42,11 @@ export class InputBlogComponent implements OnInit{
       content:"",
       date:"",
       id:""
-    }
-  }
-
-  ngOnInit() {
+    };
     this.subscription = this.webService.navItem$.subscribe(
       item => {
         if(item) {
+          console.log(item);
           this.blog['title'] = item['title'];
           this.blog.author = item['author'];
           this.blog.logo = item['logo'];
@@ -56,11 +57,11 @@ export class InputBlogComponent implements OnInit{
         }
       }
     );
-    console.log(this.blog);
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+    this.webService.changeNav(undefined);
   }
 
   onInput($event) {

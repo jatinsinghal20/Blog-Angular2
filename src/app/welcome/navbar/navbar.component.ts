@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {Router} from "@angular/router";
+import {log} from "util";
 
 @Component({
   selector: 'app-navbar',
@@ -27,6 +28,11 @@ export class NavbarComponent{
       this.toggle = false;
       this.notify.emit("Log In");
       this.router.navigate(["/home"]);
+    }
+    if(login===4){
+      this.toggle = true;
+      this.notify.emit("LogOut");
+      this.router.navigateByUrl("/welcome");
     }
   }
 }

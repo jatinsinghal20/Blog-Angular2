@@ -18,6 +18,8 @@ export class MainComponent implements OnInit {
   showBlogs:IBlog[];
   user:Object;
   finalBlogs:IBlog[];
+  openedBlog : IBlog;
+  isOpen : Boolean = false;
 
   home: boolean = false;
   favourites: boolean= false;
@@ -35,16 +37,17 @@ export class MainComponent implements OnInit {
       .subscribe(res => {
         this.showBlogs = this.blogs = res;
         this.finalBlogs=this.showBlogs;
+        if(this.authService.id) {
+          this.userService.checkUser(this.authService.id)
+            .subscribe(res => {
+              this.user = res;
+              this.viewBlogs();
+              console.log(this.authService.id)
+            }, err => {
+              console.log("welcome to blog");
+            });
+        }
       });
-    if(this.authService.id) {
-      this.userService.checkUser(this.authService.id)
-        .subscribe(res => {
-          this.user = res;
-          this.viewBlogs();
-        }, err => {
-          console.log("welcome to blog");
-        });
-    }
   }
 
   viewBlogs(){
@@ -75,7 +78,9 @@ export class MainComponent implements OnInit {
     }
 
     this.finalBlogs = this.showBlogs;
+    console.log(this.finalBlogs);
   }
+
   favourite(blog: Object,idx) {
       if(this.user['favourite'].indexOf(blog['id'])===-1){
         this.user['favourite'].push(blog['id']);
@@ -112,4 +117,10 @@ export class MainComponent implements OnInit {
     else
       this.finalBlogs = this.showBlogs;
   }
+
+  open(blog){
+    this.isOpen = !this.isOpen;
+    this.openedBlog = blog;
+  }
+
 }

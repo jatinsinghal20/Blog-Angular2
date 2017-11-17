@@ -6,6 +6,6 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <app-login (notify)="toggleNav($event)" *ngIf="toggle"></app-login>
-    <app-nav-items *ngIf="!toggle"></app-nav-items>
+    <app-nav-items *ngIf="!toggle" (notify)="toggleNav($event)"></app-nav-items>
   </div>
 </nav>

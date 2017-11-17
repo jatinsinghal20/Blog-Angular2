@@ -3,3 +3,6 @@
   top: 56px;
   z-index: 1020;
 }
+
+.cursor{ cursor: pointer;
+}

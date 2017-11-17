@@ -1,10 +1,10 @@
-<app-filters (notify)="filterBlogs($event)"></app-filters>
-<div class="container">
+<app-filters (notify)="filterBlogs($event)" *ngIf="!isOpen"></app-filters>
+<div class="container" *ngIf="!isOpen">
   <div class="row">
     <div class="col-md-6 col-lg-4" *ngFor="let blog of finalBlogs;  let idx = index">
       <div class="card blog">
         <div class="card-body">
-          <app-all-blogs [blog]="blog"></app-all-blogs>
+          <app-all-blogs [blog]="blog" (notify) = "open($event)"></app-all-blogs>
           <footer class="footer">
             <small class="card-link category">#{{blog.category}}</small>
             <small class="card-link">{{blog.date|date}}</small>
@@ -48,3 +48,5 @@
     </div>
   </div>
 </div>
+
+<app-full-blog *ngIf="isOpen" (notify) = "open($event)" [blog] = "openedBlog" ></app-full-blog>
