@@ -2,26 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
-## Development server
+## How to start
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` to download all the dependicies.
+Then run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Also you can find Database at `http://localhost:3000`.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Get Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Alt text](/src/assets/images/Capture.png?raw=true "Home Page")
 
-## Running end-to-end tests
+In this App you can watch all the blogs without login.
+In order to read full blog you have to click on title or short-content of blog.
+You can also filter the blogs on the basis of given categories at any page.
+You can login with the users by adding them in db.json ._As Signup is not implemented yet_ . 
+To add any blog in favourite or to create a new blog you first have to login. Sample login id is `jatin` and password is`123`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Enjoy Blogging
