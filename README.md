@@ -15,8 +15,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Get Started
 
-![Alt text](/Capture.png?raw=true "Home Page")
-
 In this App you can watch all the blogs without login.
 In order to read full blog you have to click on title or short-content of blog.
 You can also filter the blogs on the basis of given categories at any page.
