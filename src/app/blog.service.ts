@@ -3,7 +3,7 @@ import {Http, Headers} from "@angular/http"
 import 'rxjs/add/operator/map'
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
 
-const BlogUrl = 'https://blog-server-jatin.herokuapp.com//blog/';
+const BlogUrl = 'http://localhost:3000/blog/';
 const header = {headers: new Headers({
     'Content-Type': 'application/json'
   }
