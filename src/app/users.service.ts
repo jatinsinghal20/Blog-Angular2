@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Http,Headers} from "@angular/http";
 
-const UserUrl = 'http://localhost:3000/users/';
+const UserUrl = 'https://blog-server-jatin.herokuapp.com//users/';
 const header = {headers: new Headers({
     'Content-Type': 'application/json'
   }
